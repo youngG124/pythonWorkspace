@@ -6,7 +6,7 @@ sys.stdout = io.TextIOWrapper(sys.stderr.detach(), encoding ='utf-8')
 
 csv = pd.read_csv('C:/Users/MJ/Desktop/data.csv')
 
-rows = 508
+rows = 1464
 cols = 3
 newdata = [[0 for j in range(cols)] for i in range(rows)]
 
@@ -35,4 +35,7 @@ for index, row in csv.iterrows() : # csv의 행 만큼 반복
             continue
 
 print(newdata, QAcount)
+
+df = pd.DataFrame(newdata)
+df.to_csv("rectified.csv", header=None, index=None, encoding='utf-8-sig')
 #print(len(csv))

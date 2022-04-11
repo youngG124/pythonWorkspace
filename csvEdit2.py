@@ -7,7 +7,7 @@ sys.stdout = io.TextIOWrapper(sys.stderr.detach(), encoding ='utf-8')
 csv = pd.read_csv('C:/Users/MJ/Desktop/data.csv')
 
 rows = 508
-cols = 2
+cols = 3
 newdata = [[0 for j in range(cols)] for i in range(rows)]
 
 answer = ''
@@ -34,5 +34,5 @@ for index, row in csv.iterrows() : # csv의 행 만큼 반복
             QAcount = QAcount + 1
             continue
 
-#print(newdata, QAcount)
-print(len(csv))
+print(newdata, QAcount)
+#print(len(csv))

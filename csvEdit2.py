@@ -4,7 +4,7 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding ='utf-8')
 sys.stdout = io.TextIOWrapper(sys.stderr.detach(), encoding ='utf-8')
 
-csv = pd.read_csv('C:/Users/MJ/Desktop/data.csv')
+csv = pd.read_csv('C:/Users/MJ/Desktop/pythonWorkspace/data.csv')
 
 rows = 1464
 cols = 3

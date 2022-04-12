@@ -8,7 +8,7 @@ csv = pd.read_csv('C:/Users/MJ/Desktop/pythonWorkspace/rectified.csv')
 
 count = 0
 for index, row in csv.iterrows() : # csv의 행 만큼 반복
-    if '질문' in csv.iloc[index][1] :
+    if '답변)' in csv.iloc[index][1] :
         count = count + 1
         print(index+2)
 

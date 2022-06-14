@@ -4,11 +4,18 @@ import io
 sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding ='utf-8')
 sys.stdout = io.TextIOWrapper(sys.stderr.detach(), encoding ='utf-8')
 
-print('hello world!')
+csv = pd.read_csv('car_num_list2.csv')
 
-csv = pd.read_csv('C:/Users/MJ/Desktop/인턴 김신영/pythonWorkspace/jo.csv')
+count = 1
+for index, row in csv.iterrows() :
+    print(csv.iloc[index][0][9:22])
+    count += 1
 
-print(csv)
+print(count)
+
+
+
+#print(csv.iloc[0][0][9:24])
 
 # df = pd.DataFrame(csv)
 
